@@ -17,7 +17,7 @@ def driver(request):
         options.add_experimental_option('prefs', {'intl.accept_languages': language})
         driver = webdriver.Chrome(options=options)
     elif browser == 'firefox':
-        options = webdriver.FirefoxOptions
+        options = webdriver.FirefoxOptions()
         options.set_preference("intl.accept_languages", 'user_language')
         driver = webdriver.Firefox(options=options)
     else:
