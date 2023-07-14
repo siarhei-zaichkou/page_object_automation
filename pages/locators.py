@@ -5,3 +5,11 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = ('id', 'login_form')
     REGISTER_FORM = ('id', 'register_form')
+
+
+class ProductPageLocators:
+    ADD_TO_BASKET_BUTTON = ('css selector', 'button.btn-add-to-basket')
+    PRODUCT_NAME = ('css selector', 'div.product_main>h1')
+    PRODUCT_PRICE = ('css selector', 'p.price_color')
+    ADDED_PRODUCT_NAME = ('xpath', '(// div[@ id="messages"] // strong)[1]')
+    ADDED_PRODUCT_PRICE = ('xpath', '(//div[@id="messages"]//strong)[3]')
