@@ -13,3 +13,8 @@ class ProductPageLocators:
     PRODUCT_PRICE = ('css selector', 'p.price_color')
     ADDED_PRODUCT_NAME = ('xpath', '(// div[@ id="messages"] // strong)[1]')
     ADDED_PRODUCT_PRICE = ('xpath', '(//div[@id="messages"]//strong)[3]')
+
+
+class BasePageLocators:
+    LOGIN_LINK = ('css selector', "#login_link")
+    LOGIN_LINK_INVALID = ('css selector', "#login_link_inc")
