@@ -18,3 +18,9 @@ class ProductPageLocators:
 class BasePageLocators:
     LOGIN_LINK = ('css selector', "#login_link")
     LOGIN_LINK_INVALID = ('css selector', "#login_link_inc")
+    BASKET_LINK = ('xpath', '//a[contains(@href, "basket")]')
+
+
+class BasketPageLocators:
+    BASKET_FORMSET = ('css selector', '#basket_formset')
+    BASKET_EMPTY_MESSAGE = ('css selector', '#content_inner>p')
